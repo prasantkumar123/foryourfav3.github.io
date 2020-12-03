@@ -1,0 +1,434 @@
+
+
+
+
+html{
+
+    scroll-behavior: smooth;
+
+} 
+
+body {
+
+    background:url("https://firebasestorage.googleapis.com/v0/b/fortrial-solo.appspot.com/o/7bd2d013f07cdc5258aa11285eceeb5f-6.jpg?alt=media&token=38640a88-0f37-455e-bc25-21270fac96bd"), linear-gradient(45deg, orange, red, #3f000f);
+
+    background-repeat:no-repeat ;
+
+    margin:0;
+
+    padding:6px;
+
+    background-clip:border-box;
+
+    height:100vh;
+
+    width:100%;
+
+    padding-bottom:0;
+
+    background-attachment:fixed;
+
+    transition:3s;
+
+    animation:back 2s ease-in infinite forwards;
+
+}
+
+#hide{
+
+    opacity:1;
+
+    transition:3s;
+
+    background-image:linear-gradient(50deg, #000428, #004e92);
+
+    background-size:cover;
+
+    border-radius:10px;
+
+    box-shadow:5px 4px 7px grey;
+
+    transition:3s;
+
+    font-family: 'Courgette', cursive;
+
+  /*  position:relative;
+
+    top:3hv;
+
+    left:3vw; */
+
+}
+
+#show{
+
+    opacity:0;
+
+    transition:3s;
+
+    background-image:linear-gradient(60deg, yellow, orange, red);
+
+    border-radius:10px;
+
+    box-shadow:5px 4px 7px grey;
+
+    pointer-events: none;
+
+    transition:3s;
+
+    font-family: 'Courgette', cursive;
+
+    position:absolute;
+
+}
+
+#hide input{
+
+    background:transparent;
+
+    background-size:cover;
+
+    transition:3s;
+
+    height:10vh;
+
+    width:80vw;
+
+    border-radius:10px;
+
+    color:white;
+
+    border-top:0;
+
+    border-left:0;
+
+    border-right:0;
+
+    outline:none;
+
+}
+
+#hide input:hover{
+
+    background:linear-gradient(50deg, #8e0e00, #1f1c18);
+
+    
+
+}
+
+#show input{
+
+    background:linear-gradient(50deg, #7b4397, #dc2430);
+
+    background-size:cover;
+
+    transition:3s;
+
+    height:10vh;
+
+    width:70vw;
+
+    border-radius:10px;
+
+    color:white;
+
+    border-top:0;
+
+    border-left:0;
+
+    border-right:0;
+
+    outline:none;
+
+}
+
+#show input:hover{
+
+    background:linear-gradient(50deg, #8e0e00, #1f1c18);
+
+    
+
+}
+
+#thank{
+
+    position:absolute;
+
+    top:1vh;
+
+    font-family:cursive;
+
+    left:10vh;
+
+    opacity:0; 
+
+    text-shadow:2px 3px 4px grey;
+
+    pointer-events: none;
+
+    transition:3s;
+
+    color:#a5f8f6;
+
+    pointer-events:none;
+
+}
+
+#inst{
+
+    position:absolute;
+
+    top:13vh;
+
+    font-family:cursive;
+
+    right:10vh;
+
+    opacity:0; 
+
+    text-shadow:2px 3px 4px grey;
+
+    pointer-events: none;
+
+    transition:3s;
+
+    color:#a5f8f6;
+
+    pointer-events:none;
+
+}
+
+#last{
+
+    position:absolute;
+
+    top:15vh;
+
+    font-family:cursive;
+
+    right:10vh;
+
+    opacity:0; 
+
+    text-shadow:2px 3px 4px grey;
+
+    pointer-events: none;
+
+    transition:3s;
+
+    font-size:20px;
+
+    color:#a5f8f6;
+
+    pointer-events:none;
+
+}
+
+legend{
+
+    color:white;
+
+    font-size:20px;
+
+    font-family: 'Sriracha', cursive;
+
+}
+
+img{
+
+    height:45px;
+
+    width:45px;
+
+    float:left;
+
+    border-radius:50%;
+
+    border:3px dashed blue;
+
+    animation:imcol 3s ease-in infinite forwards;
+
+    transition:ease-in-out 3s;
+
+}
+
+img:hover{
+
+    height:90vmin;
+
+    width:90vmin;
+
+    z-index:100;
+
+    top:30px;
+
+    left:10px;
+
+    transition:ease-in-out 3s;
+
+} 
+
+@keyframes imcol{
+
+    0%{border:2px dashed #39ff14;}
+
+    25%{border:3px solid #cb22c3;}
+
+    50%{border:2px dashed #b3ff00;}
+
+    75%{border:3px solid #1ff5ff;}
+
+    100%{border:2px dashed #39ff14;}
+
+}
+
+#showname{
+
+    color:transparent;
+
+    font-size:30px; background:url("https://media.tenor.com/images/2ecc29163025dd14ea66fce64fa29d40/tenor.gif"), linear-gradient( 110.1deg,  rgba(34,126,34,1) 2.9%, rgba(168,251,60,1) 90.3% );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    background-size:cover;
+
+    font-family: 'Rye', cursive; 
+
+}
+
+#main{
+
+    background:linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(225, 30, 0, 0.2), rgba(0, 50, 200, 0.4));
+
+    border-radius:5px;
+
+    box-shadow:2px 3px 20px #b3ff00;
+
+    padding:4px;
+
+    color:white;
+
+    margin:4px;
+
+}
+
+#para{
+
+    white-space:3px;
+
+    clear:both;
+
+    font-size:15px;
+
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+@keyframes back{
+
+    0%{
+
+    background:linear-gradient(50deg, rgba(10, 225, 0, 0.1), rgba(0, 0, 0, 0.4), rgba(20, 10, 100, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/fortrial-solo.appspot.com/o/7bd2d013f07cdc5258aa11285eceeb5f-6.jpg?alt=media&token=38640a88-0f37-455e-bc25-21270fac96bd"), linear-gradient(45deg, orange, red, #3f000f); 
+
+    background-size:cover;      background-attachment:fixed;
+
+    }
+
+    
+
+    20%{
+
+    background:linear-gradient(50deg, rgba(10, 0, 220, 0.2), rgba(0, 0, 0, 0.4), rgba(10, 220, 0, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/fortrial-solo.appspot.com/o/7bd2d013f07cdc5258aa11285eceeb5f-6.jpg?alt=media&token=38640a88-0f37-455e-bc25-21270fac96bd"), linear-gradient(45deg, orange, red, #3f000f);
+
+     background-size:cover; background-attachment:fixed;
+
+    }
+
+    
+
+    40%{
+
+    background:linear-gradient(50deg, rgba(50, 190, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 10, 200, 0.2)), url("https://firebasestorage.googleapis.com/v0/b/fortrial-solo.appspot.com/o/7bd2d013f07cdc5258aa11285eceeb5f-6.jpg?alt=media&token=38640a88-0f37-455e-bc25-21270fac96bd"), linear-gradient(45deg, orange, red, #3f000f); background-size:cover; background-attachment:fixed;
+
+    }
+
+    
+
+    60%{
+
+    background:linear-gradient(50deg, rgba(225, 225, 225, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 220, 0.3)), url("https://firebasestorage.googleapis.com/v0/b/fortrial-solo.appspot.com/o/7bd2d013f07cdc5258aa11285eceeb5f-6.jpg?alt=media&token=38640a88-0f37-455e-bc25-21270fac96bd"), linear-gradient(45deg, orange, red, #3f000f); background-size:cover; background-attachment:fixed;
+
+    }
+
+    
+
+    100%{
+
+    background:linear-gradient(50deg, rgba(0, 220, 0, 0.2), rgba(0, 0, 0, 0.4), rgba(225, 225, 225, 0.2)), url("https://firebasestorage.googleapis.com/v0/b/fortrial-solo.appspot.com/o/7bd2d013f07cdc5258aa11285eceeb5f-6.jpg?alt=media&token=38640a88-0f37-455e-bc25-21270fac96bd"), linear-gradient(45deg, orange, red, #3f000f); background-size:cover; background-attachment:fixed;
+
+    }
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:transparent;
+
+}
+
+#myBtnTop {
+
+  display: none; /* Hidden by default */
+
+  position: fixed; /* Fixed/sticky position */
+
+  bottom: 20px; /* Place the button at the bottom of the page */
+
+  left: 30px; /* Place the button 30px from the right */
+
+  z-index: 99; /* Make sure it does not overlap */
+
+  border: none; /* Remove borders */
+
+  outline: none; /* Remove outline */
+
+  background-color: red; /* Set a background color */
+
+  color: white; /* Text color */
+
+  cursor: pointer; /* Add a mouse pointer on hover */
+
+  padding: 15px; /* Some padding */
+
+  border-radius: 10px; /* Rounded corners */
+
+  font-size: 18px; /* Increase font size */
+
+}
+
+#myBtnTop:hover {
+
+  background-color: #555; /* Add a dark-grey background on hover */
+
+}
+
+#CopyBtn{
+
+    position:relative;
+
+    bottom:1vh;
+
+    left:70vw;
+
+}
+
+.repbtn{
+
+    float:right;
+
+}
+
